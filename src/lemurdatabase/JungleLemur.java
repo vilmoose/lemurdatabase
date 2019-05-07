@@ -10,6 +10,13 @@ package lemurdatabase;
  *
  * @author vifeh1685
  */
-public class JungleLemur {
-    
+public class JungleLemur extends Lemur {
+    public String toString(){
+        String output = super.toString();
+        output += "They have black or blue coats " + "\n";
+        output += "They have no mane " + "\n";
+        output += "They travel in small groups " + "\n";
+        output += "They eat mice, snails, and insects ";
+        return output;
+    }
 }

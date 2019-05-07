@@ -10,16 +10,26 @@ package lemurdatabase;
  *
  * @author vifeh1685
  */
-public class Mammal {
+public class Mammal extends LemurDatabase{
   private int itsAge;
   private int itsWeight;
-  private String breed;
+  private String itsGender;
+
+//   public String toString(){
+//    String output = " ";
+//    return output;    
+//   }
 
   public Mammal() {
-    itsAge = 2;
-    itsWeight = 5;
+    
   }
-
+  public String toString(){
+      String output = " ";
+      output += "Age : " + itsAge + "\n ";
+      output += "Weight: " + itsWeight + "kg" + "\n ";
+      output += "Gender: " + itsGender + "\n ";
+      return output;
+   }
   public int getAge() {
     return itsAge;
   }
@@ -27,21 +37,20 @@ public class Mammal {
   public int getWeight() {
     return itsWeight;
   }
-
+  
+  public String getGender(){
+      return itsGender;
+  }
+  
+  public void setGender(String newGender){
+     itsGender = newGender;
+  }
   public void setAge(int newAge) {
     itsAge = newAge;
   }
 
   public void setWeight(int newWeight) {
     itsWeight = newWeight;
-  }
-
-  public String getBreed() {
-    return breed;
-  }
-
-  public void setBreed(String newBreed) {
-    breed = newBreed;
   }
   
 }

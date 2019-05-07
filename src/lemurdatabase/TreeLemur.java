@@ -10,6 +10,12 @@ package lemurdatabase;
  *
  * @author vifeh1685
  */
-public class TreeLemur {
-    
+public class TreeLemur extends Lemur {
+    public String toString(){
+        String output = super.toString();
+        output += "They travel in large groups " + "\n";
+        output += "They eat fruit " + "\n";
+        output += "They have red mane ";
+        return output;
+    }
 }
